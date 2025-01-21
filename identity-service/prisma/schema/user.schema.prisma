@@ -1,10 +1,24 @@
 model User {
-    id        String   @id @default(cuid())
-    username  String
-    email     String   @unique
+    id        String         @id @default(cuid())
+    username  String         @unique
+    email     String         @unique
     password  String
+    tokens    RefreshToken[] @relation("UserTokens")
+    createdAt DateTime       @default(now())
+    updatedAt DateTime       @updatedAt
+
+    @@map("data_users")
+}
+
+model RefreshToken {
+    id        String   @id @default(cuid())
+    userId    String
+    user      User     @relation("UserTokens", fields: [userId], references: [id], onDelete: Cascade)
+    token     String   @unique
+    expiresAt DateTime
     createdAt DateTime @default(now())
     updatedAt DateTime @updatedAt
 
-    @@map("data_users")
+    @@unique([userId, token])
+    @@map("data_refresh_tokens")
 }
