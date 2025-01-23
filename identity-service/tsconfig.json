@@ -11,7 +11,10 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "rate-limit-redis": ["./node_modules/rate-limit-redis"]
+    }
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "build"]

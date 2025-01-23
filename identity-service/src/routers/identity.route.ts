@@ -10,7 +10,7 @@ class IdentityRouter {
     }
 
     private initializeRoutes() {
-        this.router.post('/signup', USER_CONTROLLER.REGISTER);
+        this.router.post('/register',USER_CONTROLLER.REGISTER);
     }
 
     public getRoutes() {

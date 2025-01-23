@@ -14,3 +14,5 @@ export interface ErrorConfig extends Error {
     message: string;
     stack?: string;
   }
+
+export type RedisReply = string | number | Buffer | null | Array<RedisReply>;
