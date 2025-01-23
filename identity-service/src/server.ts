@@ -84,6 +84,6 @@ process.on('unhandledRejection', (err:any) => {
 
 //running
 app.listen(port, () => {
-  console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
+  Logger.info(`⚡️[server]: Server is running at http://localhost:${port}`);
 });
 
