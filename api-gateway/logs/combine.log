@@ -1,0 +1,7 @@
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"api-gateway","timestamp":"2025-01-29T03:38:04.635Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-01-29T03:38:04.640Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"api-gateway","timestamp":"2025-01-29T03:38:06.168Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-01-29T03:38:06.169Z"}
+{"level":"info","message":"Received POST request to /v1/auth/register","service":"api-gateway","timestamp":"2025-01-29T03:43:17.494Z"}
+{"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-01-29T03:43:17.498Z"}
+{"level":"info","message":"Response received from Identity service: 201","service":"api-gateway","timestamp":"2025-01-29T03:43:17.680Z"}
